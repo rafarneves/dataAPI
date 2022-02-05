@@ -105,6 +105,8 @@ mongoose
   )
   .then(() => {
     console.log("Conectou ao banco!");
-    app.listen(3333);
+    app.listen(PORT, () => {
+      console.log("Servidor iniciado na porta: " + PORT);
+    });
   })
   .catch((err) => console.log(err));
