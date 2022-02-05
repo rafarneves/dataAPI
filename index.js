@@ -99,6 +99,7 @@ app.delete("/users/:id", async (req, res) => {
 });
 
 // Conecta ao banco do MongoDB
+const PORT = process.env.PORT || 8877
 mongoose
   .connect(
     "mongodb+srv://rafaarneves:finfo2009@apirestful.qgmx1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
